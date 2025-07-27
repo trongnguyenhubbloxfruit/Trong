@@ -11,7 +11,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=83190276951914"
+ImageButton.Image = "http://www.roblox.com/asset/?id=128607037407288"
 
 UICorner.CornerRadius = UDim.new(1, 10) 
 UICorner.Parent = ImageButton
@@ -23,8 +23,8 @@ end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
-    Title = "TBoy Roblox Tổng Hợp",
-    SubTitle = "Blox Fruit",
+    Title = "TrongNguyen Hub",
+    SubTitle = "By trongnguyen",
     TabWidth = 157,
     Size = UDim2.fromOffset(450, 300),
     Acrylic = true,
@@ -34,14 +34,22 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
         Main0=Window:AddTab({ Title="Thông Tin" }),
         Main1=Window:AddTab({ Title="Tự động hop" }),
-        Main2=Window:AddTab({ Title="Farm Fruit" }),
+        Main2=Window:AddTab({ Title="Script Fram" }),
        Main3=Window:AddTab({ Title="lin tinh" }),
 }
     Tabs.Main0:AddButton({
     Title = "Discord",
-    Description = "TBoyRoblox Community",
+    Description = "trongnguyen",
     Callback = function()
-        setclipboard("https://discord.gg/tboyroblox-community-1253927333920899153")
+        setclipboard("https://discord.gg/j2K6cGkW")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "TrongNguyen",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@trongsad12345")
     end
 })
 
@@ -49,35 +57,18 @@ local Tabs = {
     Title = "Youtuber",
     Description = "TBoy Roblox",
     Callback = function()
-        setclipboard("https://www.youtube.com/@TBoyRoblox08")
-    end
-})
-
-    Tabs.Main0:AddButton({
-    Title = "Youtuber",
-    Description = "TBoy Gamer",
-    Callback = function()
         setclipboard("https://www.youtube.com/@TBoyGamer08")
     end
 })
     
     Tabs.Main1:AddButton({
-    Title="Redz Hub",
+    Title="Hop Full Mon (Bấm 1 Cái)",
     Description="",
     Callback=function()
-	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
-  end
-})
-
+  game:GetService("ReplicatedStorage").__ServerBrowser:InvokeServer("teleport","8ee176f9-833c-4628-b0a6-eb6ce1bb4705")
+	  
 Tabs.Main1:AddButton({
-    Title="GreenZ Hub",
+    Title="Hop Đảo Cáo (Bấm 1 cái)",
     Description="",
     Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/GreenZ-Hub/refs/heads/main/KaitunDoughKing.lua"))()
-  end
-})
+	  game:GetService("ReplicatedStorage").__ServerBrowser:InvokeServer("teleport","8ee176f9-833c-4628-b0a6-eb6ce1bb4705")
